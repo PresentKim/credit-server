@@ -1,0 +1,9 @@
+#IDEA files
+.idea/
+*.iml
+
+
+#NPM files
+node_modules
+
+.env
