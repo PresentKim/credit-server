@@ -6,11 +6,17 @@
   },
   "dependencies": {
     "adaro": "~1.0.4",
+    "bcryptjs": "^2.4.3",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
+    "env-cmd": "^10.1.0",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
+    "jsonwebtoken": "^8.5.1",
     "morgan": "~1.9.1",
     "node-sass-middleware": "0.11.0",
+    "nodemon": "^2.0.6",
+    "oracledb": "^5.0.0",
+    "validator": "^13.1.17"
   }
 }
