@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "start": "env-cmd -f ./.env nodemon src/app.js"
   },
   "dependencies": {
     "adaro": "~1.0.4",
