@@ -5,7 +5,7 @@ const port = process.env.PORT;
 const app = express();
 
 app.use(express.json());
-app.use(userRouter);
+app.use('/user/', userRouter);
 app.use((req, res) => {
     res.status(404).send({message: `Not found method: ${req.path}`});
 });
