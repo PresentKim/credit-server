@@ -1,0 +1,8 @@
+{
+  "NODE_ORACLEDB_USER": "hr",
+  "NODE_ORACLEDB_PASSWORD": "pw",
+  "NODE_ORACLEDB_CONNECTION_STRING": "localhost/orclpdb1",
+  "NODE_ORACLEDB_EXTERNAL_AUTH": false,
+  "JWT_KEY": "YourJwtKey",
+  "PORT": 3000
+}

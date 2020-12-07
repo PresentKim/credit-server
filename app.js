@@ -1,6 +1,7 @@
 const express = require('express');
 const userRouter = require('./routers/user');
-const port = process.env.PORT;
+const config = require('./config.json');
+const port = config.PORT;
 
 const app = express();
 

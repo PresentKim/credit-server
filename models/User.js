@@ -1,6 +1,7 @@
 const crypto = require('crypto');
 const jwt = require('jsonwebtoken');
 const db = require('../db/db');
+const config = require('../config.json');
 
 const toLowerCaseKeys = (obj) => Object.keys(obj).reduce((result, key) => {
     result[key.toLowerCase()] = obj[key];
@@ -37,7 +38,7 @@ class User {
     }
 
     resetToken() {
-        return this.token = jwt.sign({id: this.id, salt: crypto.randomBytes(16).toString('hex')}, process.env.JWT_KEY);
+        return this.token = jwt.sign({id: this.id, salt: crypto.randomBytes(16).toString('hex')}, config.JWT_KEY);
     }
 
     toBindParameter() {

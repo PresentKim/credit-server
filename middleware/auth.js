@@ -1,10 +1,11 @@
 const jwt = require('jsonwebtoken');
 const User = require('../models/User');
+const config = require('../config.json');
 
 module.exports = async function (req, res, next) {
     const token = req.query.token;
     try {
-        const data = jwt.verify(token, process.env.JWT_KEY);
+        const data = jwt.verify(token, config.JWT_KEY);
         const user = await User.findByToken(data.id, token);
         if (!user)
             throw new Error('invalid token');
